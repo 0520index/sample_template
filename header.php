@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>【公式】害虫・害獣駆除サービス | 最短15分で駆けつけ</title>
+    <title>【公式】害虫・害獣・害鳥駆除サービス | 最短15分で駆けつけ</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -14,7 +14,7 @@
         <div class="container header-inner">
             <div class="logo">
                 <h1>株式会社SAMPLE</h1>
-                <p>地域密着の害虫・害獣駆除専門</p>
+                <p>地域密着の害虫・害獣・害鳥駆除専門</p>
             </div>
             <div class="header-contact">
                 <p class="hours">24時間365日受付中</p>
