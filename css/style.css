@@ -44,6 +44,11 @@ header {
     border-bottom: 2px solid #005CAF;
 }
 
+.header-nav a:hover {
+    color: #005CAF;
+    transition: 0.3s;
+}
+
 .tel-number {
     font-size: 1.5rem;
     font-weight: bold;
@@ -89,6 +94,11 @@ header {
 .hero h2 span {
     color: #ffeb3b;
     /* 際立たせる黄 */
+}
+
+/* 文字の視認性アップ */
+.hero-content h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 /* ボタンアニメーション */
@@ -232,6 +242,13 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* 説明文（pタグ）の調整 */
+.result-card p {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
 .result-tag {
     display: inline-block;
     background: #28a745;
@@ -240,6 +257,47 @@ header {
     font-size: 0.8rem;
     border-radius: 3px;
     margin-bottom: 10px;
+}
+
+/* 事例カード内のラベル装飾 */
+.label {
+    display: block;
+    font-weight: bold;
+    color: #005CAF;
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+}
+
+/* 金額セルの強調 */
+.price-cell {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #d9534f;
+    text-align: center !important;
+    white-space: nowrap;
+}
+
+/* 料金表内のラベル微調整 */
+.price-table .label {
+    display: inline-block;
+    font-size: 0.7rem;
+    padding: 1px 5px;
+    background: #f0f0f0;
+    color: #666;
+    border-radius: 3px;
+    margin-right: 5px;
+    margin-bottom: 2px;
+}
+
+/* モバイル対応*/
+@media (max-width: 768px) {
+    .price-section .container {
+        overflow-x: auto;
+    }
+
+    .price-table {
+        min-width: 600px;
+    }
 }
 
 /* よくある質問 */
@@ -322,22 +380,28 @@ header {
 @media (max-width: 768px) {
     .header-inner {
         flex-direction: column;
-        /* ヘッダーを縦並びに */
         gap: 10px;
     }
 
     .hero h2 {
         font-size: 1.8rem;
-        /* 文字を少し小さく */
     }
 
     body {
         padding-bottom: 60px;
-        /* 固定ナビに隠れないよう余白を追加 */
     }
 }
 
-/* 文字の視認性アップ */
-.hero-content h2 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+@media (max-width: 768px) {
+    .price-section .container {
+        /* 指で動かせる感じを出すための影 */
+        background: linear-gradient(to right, white 30%, rgba(255, 255, 255, 0)),
+            linear-gradient(to right, rgba(255, 255, 255, 0), white 70%) 0 100%,
+            radial-gradient(farthest-side at 0 50%, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)),
+            radial-gradient(farthest-side at 100% 50%, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)) 0 100%;
+        background-repeat: no-repeat;
+        background-color: white;
+        background-size: 40px 100%, 40px 100%, 14px 100%, 14px 100%;
+        background-attachment: local, local, scroll, scroll;
+    }
 }
