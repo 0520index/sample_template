@@ -12,6 +12,11 @@ body {
     padding: 0 20px;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
 /* ヘッダー */
 header {
     background: #fff;
