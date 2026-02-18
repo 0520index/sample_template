@@ -32,22 +32,57 @@ header {
 
 .header-nav ul {
     display: flex;
+    justify-content: center;
+    gap: 0;
     list-style: none;
-    gap: 20px;
+    padding: 0;
+}
+
+.header-nav li {
+    flex: 1;
+    border-right: 1px solid #eee;
+}
+
+.header-nav li:last-child {
+    border-right: none;
 }
 
 .header-nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
     text-decoration: none;
     color: #333;
+    transition: 0.3s;
     font-weight: bold;
 }
 
+.header-nav a i {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #005CAF;
+}
+
+.header-nav a span {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.header-nav a small {
+    font-size: 0.6rem;
+    color: #999;
+    letter-spacing: 0.05em;
+}
+
 .header-nav a.active {
+    background: #f0f7ff;
     color: #005CAF;
     border-bottom: 2px solid #005CAF;
 }
 
 .header-nav a:hover {
+    background: #f0f7ff;
     color: #005CAF;
     transition: 0.3s;
 }
