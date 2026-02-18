@@ -30,7 +30,6 @@ header {
     align-items: center;
 }
 
-/* ナビゲーションのスタイル例 */
 .header-nav ul {
     display: flex;
     list-style: none;
@@ -53,11 +52,45 @@ header {
     transition: 0.3s;
 }
 
+.header-contact {
+    background: #fff9f9;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px solid #d9534f;
+}
+
 .tel-number {
     font-size: 1.5rem;
     font-weight: bold;
     color: #d9534f;
     text-decoration: none;
+}
+
+.badge-mini {
+    background: #ff9800;
+    color: #fff;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 3px;
+    vertical-align: middle;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.contact-info-top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 2px;
+}
+
+/* 電話番号をもっと目立たせる */
+.header-contact .tel-number {
+    font-size: 1.8rem;
+    /* 少し大きく */
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 /* メインビジュアル */
