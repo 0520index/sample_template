@@ -119,10 +119,8 @@ header {
     margin-bottom: 2px;
 }
 
-/* 電話番号をもっと目立たせる */
 .header-contact .tel-number {
     font-size: 1.8rem;
-    /* 少し大きく */
     display: flex;
     align-items: center;
     gap: 8px;
@@ -171,7 +169,6 @@ header {
     color: #ffeb3b;
 }
 
-/* 文字の視認性アップ */
 .hero-content h2 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
@@ -356,7 +353,6 @@ header {
     margin-bottom: 10px;
 }
 
-/* 事例カード内のラベル装飾 */
 .label {
     display: block;
     font-weight: bold;
@@ -365,7 +361,6 @@ header {
     margin-bottom: 5px;
 }
 
-/* 金額セルの強調 */
 .price-cell {
     font-size: 1.2rem;
     font-weight: bold;
@@ -374,7 +369,6 @@ header {
     white-space: nowrap;
 }
 
-/* 料金表内のラベル微調整 */
 .price-table .label {
     display: inline-block;
     font-size: 0.7rem;
@@ -526,7 +520,6 @@ header {
     border: 1px solid #ddd;
     border-radius: 5px;
     box-sizing: border-box;
-    /* 幅100%を維持 */
     font-size: 1rem;
 }
 
@@ -560,11 +553,11 @@ header {
         min-width: 600px;
     }
 
-    /* PCではスマホナビを隠す */
+    /* PCではスマホナビを隠す
     .mobile-footer-nav {
         display: none;
     }
-
+ */
 
     /* スマホ用の微調整 */
     .header-inner {
