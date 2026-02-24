@@ -135,32 +135,27 @@ header {
 
 /* メインビジュアル */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('hero-bg.jpg') center/cover;
-    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/hero-bg.png') center/cover;
+    height: 750px;
     display: flex;
     align-items: center;
     color: #fff;
     text-align: center;
 }
 
-/* トップページ用 */
-.hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/top-hero.jpg');
-}
-
 /* 害虫ページ専用 */
 .gaichu-hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/gaichu-hero.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/gaichu-hero.png');
 }
 
 /* 害鳥ページ専用 */
 .gaichou-hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/gaichou-hero.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/gaichou-hero.png');
 }
 
 /* 害獣ページ専用*/
 .gaiju-hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/gaiju-hero.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/gaiju-hero.png');
 }
 
 .hero-content {
@@ -501,7 +496,7 @@ header {
 .contact-section {
     padding: 100px 0;
     background: linear-gradient(rgba(0, 92, 175, 0.85), rgba(0, 92, 175, 0.85)),
-        url('../images/top-hero.jpg') center/cover no-repeat fixed;
+        url('../images/hero-bg.png') center/cover no-repeat fixed;
 }
 
 .contact-section .section-title {
