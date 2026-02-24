@@ -1,3 +1,11 @@
+/* --- カラー変数の定義（侍パレット） --- */
+:root {
+    --samurai-navy: #1a2a40;
+    --samurai-gold: #c5a059;
+    --samurai-red: #b32d2d;
+    --samurai-light-bg: #f4f1ea;
+}
+
 /* 基本設定 */
 body {
     font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
@@ -642,4 +650,129 @@ header {
     .contact-form {
         padding: 20px;
     }
+}
+
+/* --- ヘッダーの修正 --- */
+header {
+    background: #ffffff;
+    padding: 10px 0;
+    /* 線の色を濃紺に変更 */
+    border-bottom: 3px solid var(--samurai-navy);
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    color: var(--samurai-navy);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* 屋号内の「害虫」「害獣」などの文字色 */
+.logo h1 span {
+    color: var(--samurai-red);
+    font-weight: bold;
+}
+
+/* ナビゲーションのアイコン色 */
+.header-nav a i {
+    color: var(--samurai-navy);
+}
+
+.header-nav a.active {
+    color: var(--samurai-navy);
+    border-bottom: 2px solid var(--samurai-gold);
+    /* アクティブ線をゴールドに */
+}
+
+/* --- ヒーローエリアの修正 --- */
+.hero h2 span {
+    color: #ffeb3b;
+    /* 視認性の高い黄色のまま、もしくは var(--samurai-gold) */
+}
+
+.hero .badge {
+    background: var(--samurai-red);
+    /* 朱赤に変更 */
+}
+
+/* --- セクションタイトル --- */
+.section-title::after {
+    background: var(--samurai-gold);
+    /* 下線をゴールドに */
+    width: 80px;
+    height: 4px;
+}
+
+/* --- ボタン（助太刀アクション） --- */
+.cta-button {
+    background: var(--samurai-red);
+    box-shadow: 0 4px 15px rgba(179, 45, 45, 0.4);
+}
+
+.cta-button:hover {
+    background: #902424;
+}
+
+/* --- 料金表・実績カードの装飾 --- */
+.price-table th {
+    background: var(--samurai-navy);
+    /* ヘッダーを濃紺に */
+    color: #fff;
+}
+
+.result-card {
+    border-left: 5px solid var(--samurai-gold);
+    /* 左線をゴールドにして高級感を */
+}
+
+.result-tag {
+    background: var(--samurai-navy);
+}
+
+/* --- お問い合わせ（参上）セクション --- */
+.contact-section {
+    /* 背景のオーバーレイを濃紺透過に */
+    background: linear-gradient(rgba(26, 42, 64, 0.9), rgba(26, 42, 64, 0.9)),
+        url('../images/hero-bg.png') center/cover no-repeat fixed;
+}
+
+.submit-btn {
+    background: var(--samurai-red);
+    box-shadow: 0 4px 15px rgba(179, 45, 45, 0.3);
+}
+
+.submit-btn:hover {
+    background: #902424;
+}
+
+/* CSSに追加 */
+.header-nav {
+    background: #ffffff;
+    /* 白に戻して、下線を際立たせる */
+    border-bottom: 2px solid #eee;
+}
+
+.header-nav a {
+    position: relative;
+    overflow: hidden;
+}
+
+/* ホバー時に侍の刀で斬ったような下線を出す演出 */
+.header-nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background: #c5a059;
+    /* ゴールド */
+    transition: 0.4s;
+}
+
+.header-nav a:hover::after,
+.header-nav a.active::after {
+    left: 0;
 }
