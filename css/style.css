@@ -776,3 +776,16 @@ header {
 .header-nav a.active::after {
     left: 0;
 }
+
+.gallery-item img,
+.result-image img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+    /* 少し大きくする */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
